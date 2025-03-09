@@ -1,4 +1,47 @@
+Create Empty Parent at Center
+📌 Overview
+This Unity Editor tool allows you to create an empty parent at the center of selected objects, instead of using their pivot points like Unity’s default "Create Empty Parent" does. This ensures better grouping and alignment when working with multiple objects.
+
+🚀 Why Use This?
+🔹 Default Unity behavior creates the parent using the pivot points of selected objects, which may not always be ideal.
+🔹 This tool calculates the true center based on the bounding box of all selected objects instead.
+🔹 Keeps object hierarchy intact while allowing precise organization.
+
+📥 Installation
+1️⃣ Copy CreateEmptyParentAtCenter.cs into your Editor folder (Assets/Editor/).
+2️⃣ Open Unity and go to GameObject → Create Empty Parent at Center in the menu bar.
+
+🛠️ How It Works
+1️⃣ Select multiple objects in the Hierarchy.
+2️⃣ Click GameObject → Create Empty Parent at Center or use a custom shortcut (if assigned).
+3️⃣ A new empty parent is created at the calculated center of the selected objects.
+4️⃣ The selected objects are reparented under this new empty GameObject.
+5️⃣ The tool automatically highlights and renames the new parent in the Hierarchy.
+
+📌 Features
+✔️ Centers the new parent based on object bounds, not pivots.
+✔️ Maintains hierarchy & keeps relative positions intact.
+✔️ Automatically selects the new parent for quick renaming.
+✔️ Works with all types of objects, including meshes & non-mesh objects.
+
+🎯 Usage Example
+Imagine selecting multiple props, environment assets, or UI elements. Instead of manually adjusting a new empty parent, just:
+✅ Select objects → Click "Create Empty Parent at Center" → Done!
+
+Your new parent is now at the true geometric center of the selected objects, making it easier to manipulate and align them.
+
+📜 License
+This tool is free & open-source under the MIT License.
+👉 Feel free to use, modify, and contribute!
+
+🤝 Contributing
+🔹 Want to improve this tool? Open an Issue or submit a Pull Request here.
+
+🚀 Happy Unity development! 🎮
+
+
 UnityTools
+
 A collection of useful scripts and utilities to enhance Unity game development. This repository is designed to provide various tools that simplify workflows, improve efficiency, and solve common development challenges.
 
 📂 Repository Structure
