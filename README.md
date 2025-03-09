@@ -1,46 +1,57 @@
-UnityTools
-A collection of useful scripts and utilities to enhance Unity game development. This repository is designed to provide various tools that simplify workflows, improve efficiency, and solve common development challenges.
+Create Empty Parent at Center
+📌 Overview
+This Unity Editor tool allows you to create an empty parent at the true center of selected objects, instead of using their pivot points like Unity’s default "Create Empty Parent" does. This ensures better grouping, alignment, and scene organization when working with multiple objects.
 
-📂 Repository Structure
-Each tool is categorized into its own branch, allowing developers to pick and choose what they need without downloading the entire repository.
+📽️ Video Tutorial
+🎥 Watch the tool in action! Learn how to use it in this step-by-step tutorial:
+👉 https://youtu.be/UWmzkw4uzOo
 
-🔀 Available Branches
-lod-merger - A script to merge multiple LODGroups into a single optimized LOD structure.
-(More branches/tools will be added over time.)
-You can check out a specific tool using:
+🚀 Why Use This?
+🔹 Default Unity behavior creates the parent using the pivot points of selected objects, which may not always be ideal.
+🔹 This tool calculates the true center based on the bounding box of all selected objects instead.
+🔹 Maintains object hierarchy while allowing precise organization.
+🔹 Automatically renames and selects the new parent, so you can quickly edit it.
 
-bash
-Copy
-Edit
-git checkout <branch-name>
-🔧 How to Use
-Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/Shripad-S-Agashe/UnityTools.git
-Switch to the Desired Branch
-bash
-Copy
-Edit
-git checkout lod-merger
-Import the Required Scripts
-Copy the necessary files into your Unity project under Assets/Scripts/.
-If there are editor scripts, place them in an Editor/ folder.
-🛠 Tools List
-Below are some of the planned and existing tools:
+📥 Installation
+Option 1: Import the Unity Package (Recommended)
+1️⃣ Download the CreateParentAtCenter.unitypackage from the repository.
+2️⃣ In Unity, go to Assets → Import Package → Custom Package....
+3️⃣ Select CreateParentAtCenter.unitypackage and click Import.
 
-Tool	Branch Name	Description
-LOD Group Merger	lod-merger	Merges multiple LODGroups into a single optimized LOD structure.
-(Coming Soon)	...	More tools to be added soon!
+Option 2: Manual Installation
+1️⃣ Download CreateEmptyParentAtCenter.cs from the repository.
+2️⃣ Place it inside your Unity project’s Assets/Editor/ folder.
+3️⃣ Open Unity, and the tool will be available in GameObject → Create Empty Parent at Center.
+
+🛠️ How It Works
+1️⃣ Select multiple objects in the Hierarchy.
+2️⃣ Click GameObject → Create Empty Parent at Center or use a custom shortcut (if assigned).
+3️⃣ A new empty parent is created at the calculated center of the selected objects.
+4️⃣ The selected objects are automatically reparented under the new empty GameObject.
+5️⃣ The tool automatically highlights and renames the new parent, making it easy to edit.
+
+📌 Features
+✔️ Creates an empty parent using object bounds, not pivots.
+✔️ Maintains hierarchy & keeps relative positions intact.
+✔️ Automatically selects and renames the new parent for quick editing.
+✔️ Works with all object types, including meshes, UI elements, and non-mesh objects.
+
+🎯 Usage Example
+Imagine you’re working with multiple props, environment assets, or UI elements. Instead of manually adjusting a new empty parent:
+✅ Select objects → Click "Create Empty Parent at Center" → Done!
+
+The new parent is now at the true geometric center of the selected objects, making it easier to manipulate and align them.
+
 📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This tool is free & open-source under the MIT License.
+👉 Feel free to use, modify, and contribute!
 
 🤝 Contributing
-Contributions are welcome! To add a new tool:
+🔹 Want to improve this tool? Open an Issue or submit a Pull Request here:
+👉 https://github.com/Shripad-S-Agashe/UnityTools/issues
 
-Create a new branch for your tool.
-Add your script(s) with proper documentation.
-Submit a pull request with details about the tool.
-📢 Contact & Support
-If you have suggestions, issues, or feature requests, open an issue on GitHub!
+🌍 More from Me
+🔗 Website: https://www.shripadagashe.com/
+
+🚀 Happy Unity development! 🎮
+
